@@ -1,17 +1,15 @@
-# Project work - sostenibilità Collemattoni
+# Project work – sostenibilità Collemattoni
 
-File da caricare nella cartella principale del repository GitHub:
+Questo repository contiene i file sviluppati per il project work dedicato alla comunicazione del Bilancio di Sostenibilità 2024 dell’azienda Collemattoni.
 
-- `index.html`: struttura e contenuti della pagina;
-- `styles.css`: formattazione grafica e adattamento ai dispositivi mobili;
-- `Report_Sostenibilita_Collemattoni_2024.pdf`: documento scaricabile dalla pagina.
+Il progetto consiste nella realizzazione di una pagina web semplice e responsive, sviluppata in HTML e CSS, con lo scopo di presentare alcuni dati significativi relativi alla sostenibilità dell’impresa e permettere l’accesso al Bilancio completo in formato PDF.
 
-## Controllo in locale
+## File del progetto
 
-Aprire `index.html` con un browser. Il pulsante di download funziona se il PDF mantiene esattamente il nome indicato sopra e resta nella stessa cartella di `index.html`.
+- `index.html`: contiene la struttura e i contenuti della pagina web.
+- `styles.css`: contiene la formattazione grafica e le regole per l’adattamento ai diversi dispositivi.
+- `Report_Sostenibilita_Collemattoni_2024.pdf`: Bilancio di Sostenibilità utilizzato come fonte principale del progetto.
 
-## Pubblicazione con GitHub Pages
+La pagina è stata organizzata in sezioni dedicate all’azienda, alle principali attività di sostenibilità, ad alcuni dati del 2024 e al download del documento completo.
 
-Dopo aver caricato i tre file nel repository, aprire **Settings > Pages**, scegliere **Deploy from a branch**, selezionare il branch principale e la cartella `/ (root)`, quindi salvare. Al termine della pubblicazione GitHub mostrerà l'indirizzo della pagina.
-
-Il link del repository e, se richiesto, quello della pagina pubblicata potranno essere inseriti nel template del project work dopo il caricamento.
+Durante lo sviluppo è stata prestata attenzione alla semplicità del codice, alla leggibilità dei contenuti, alla navigazione da tastiera e all’adattamento della pagina anche a schermi di dimensioni ridotte.
