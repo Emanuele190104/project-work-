@@ -1,0 +1,233 @@
+/* Impostazioni generali della pagina */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #262626;
+  background: #ffffff;
+}
+
+.contenitore {
+  width: min(92%, 980px);
+  margin: 0 auto;
+}
+
+a {
+  color: #6b1835;
+}
+
+a:focus-visible {
+  outline: 3px solid #f0b64d;
+  outline-offset: 3px;
+}
+
+/* Il link resta fuori dallo schermo finché non riceve il focus da tastiera. */
+.salta-contenuto {
+  position: absolute;
+  left: -10000px;
+  top: 10px;
+  padding: 8px 12px;
+  background: #ffffff;
+  color: #111111;
+  border: 2px solid #111111;
+  z-index: 20;
+}
+
+.salta-contenuto:focus {
+  left: 10px;
+}
+
+/* Testata e menu */
+.testata {
+  background: #6b1835;
+  color: #ffffff;
+}
+
+.testata-interna {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 18px 0;
+}
+
+.nome-azienda {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.sottotitolo {
+  margin: 2px 0 0;
+  font-size: 0.9rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Parte iniziale */
+.apertura {
+  padding: 70px 0;
+  background: #f4eee8;
+}
+
+.etichetta {
+  margin: 0 0 8px;
+  color: #6b1835;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #4d1027;
+}
+
+h1 {
+  max-width: 720px;
+  margin: 0 0 18px;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 1.1;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.introduzione {
+  max-width: 700px;
+  font-size: 1.1rem;
+}
+
+.pulsante {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 11px 18px;
+  border-radius: 4px;
+  background: #6b1835;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pulsante:hover {
+  background: #511128;
+}
+
+/* Contenuti */
+.sezione {
+  padding: 52px 0;
+}
+
+.sfondo-chiaro {
+  background: #faf8f5;
+}
+
+.testo-introduttivo {
+  max-width: 760px;
+}
+
+.schede {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.scheda {
+  padding: 20px;
+  border: 1px solid #ded8d3;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.scheda h3 {
+  margin-top: 0;
+}
+
+.tabella-contenitore {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #d5d0cb;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #eee5df;
+}
+
+.nota {
+  font-size: 0.92rem;
+  color: #555555;
+}
+
+.area-report {
+  background: #f4eee8;
+}
+
+.piede {
+  padding: 24px 0;
+  background: #2d2d2d;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.piede p {
+  margin: 3px 0;
+}
+
+/* Su schermi più stretti il menu e le schede si dispongono in una sola colonna. */
+@media (max-width: 700px) {
+  .testata-interna {
+    display: block;
+  }
+
+  nav {
+    margin-top: 14px;
+  }
+
+  .apertura {
+    padding: 50px 0;
+  }
+
+  .schede {
+    grid-template-columns: 1fr;
+  }
+}
